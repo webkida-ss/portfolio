@@ -171,8 +171,8 @@ a
 
 .header__title
 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: auto;
 
     -webkit-transition: opacity .5s ease 0s;
             transition: opacity .5s ease 0s;
@@ -181,7 +181,6 @@ a
 .header__title img
 {
     width: 100%;
-    height: 100%;
 }
 
 .header__title:hover
@@ -253,7 +252,8 @@ a
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
 
-    opacity: .6;
+    opacity: .8;
+    color: #5cc2f2;
 }
 
 .header__drawer
@@ -398,7 +398,6 @@ a
     .header__title
     {
         width: 50px;
-        height: 50px;
     }
     .header__nav
     {
