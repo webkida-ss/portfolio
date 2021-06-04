@@ -49,9 +49,15 @@ $(function () {
 	// リンク選択時にドロワーを閉じる
 	$('.js-drawer-item').on('click', function (e) {
 		let targetClass = drawerBtn.attr("data-target");
-		console.log(targetClass);
 		$("." + targetClass).removeClass('is-checked');
 	});
+	$(window).resize(function () { // is-checkedが残っているタブレット以上のサイズになった場合もバグる可能性あり
+		if ($(window).width() > 559) {
+			let targetClass = drawerBtn.attr("data-target");
+			$("." + targetClass).removeClass('is-checked');
+		}
+	});
+
 
 	/*********************************************
 	 * スライダー
