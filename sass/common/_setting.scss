@@ -46,19 +46,19 @@ $layer: (
 	default: 1,
 );
 
-// フォントインポート
-
+// フォントインポート 和文：Noto Sans JP、英文：Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 // ---------------------------------------------------------------------------
 // フォント
 // https://saruwakakun.com/html-css/basic/font-family-how-to
 // $font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
 // ---------------------------------------------------------------------------
-$font-family-default: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-$font-family-english: sans-serif;
+$font-family-default: 'Noto Sans JP', sans-serif;
+$font-family-english: 'Open Sans', sans-serif;
 $font-family-base: $font-family-default;
 $font-size-base: 1.6rem;
 $font-weight-base: 400;
-$font-weight-bold: 600;
+$font-weight-bold: 700;
 $line-height-base: 1.6;
 
 // ブレイクポイント 
