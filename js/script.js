@@ -51,11 +51,15 @@ $(function () {
 		let targetClass = drawerBtn.attr("data-target");
 		$("." + targetClass).removeClass('is-checked');
 	});
-	$(window).resize(function () { // is-checkedが残っているタブレット以上のサイズになった場合もバグる可能性あり
-		if ($(window).width() > 559) {
+	$(window).resize(function () {
+		if ($(window).width() > 559) { // is-checkedが残っているタブレット以上のサイズになった場合もバグる可能性あり
 			let targetClass = drawerBtn.attr("data-target");
 			$("." + targetClass).removeClass('is-checked');
+			// $(".header").removeClass('is-white');
+		} else { // スマホの時はヘッダーを白く
+			// $(".header").addClass('is-white');
 		}
+
 	});
 
 

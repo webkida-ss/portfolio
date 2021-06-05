@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	padding-top: $header-height-pc;
+	// padding-top: $header-height-pc;
 	overflow-x: hidden;// 横はみ出：隠す
 	background: $color-background-base;
 	color: $color-text-base;
@@ -38,7 +38,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-wrap: break-word;// ブラウザがテキストボックスに改行を入れる場合に文字の途中でも改行する
 	@include mq(sp) {
-		padding-top: $header-height-sp;
+		// padding-top: $header-height-sp;
 	}
 }
 
