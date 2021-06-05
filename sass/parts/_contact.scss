@@ -1,62 +1,151 @@
-.contact{
-    // padding: *px 0  *px;
-    &__inner{
-        // width:(*px / $layout-width-canvas-pc) * 100%;
-        // padding: 0 *px 0 *px;
-        @include mq(tab) {
-            // width:(*px / $layout-width-canvas-tab) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-        @include mq(sp) {
-            // width:(*px / $layout-width-canvas-sp) * 100%;
-            // padding: 0 *px 0 *px;
-        }
-    }
+.contact {
+	padding: 70px 0;
 
-    &__title{
-    
-    }
+	&__inner {
+		width: (700px / $layout-width-canvas-pc) * 100%;
+		margin-top: 40px;
 
-    &__content{
-    
-    }
+		@include mq(tab) {
+			// width:(*px / $layout-width-canvas-tab) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+		@include mq(sp) {
+			// width:(*px / $layout-width-canvas-sp) * 100%;
+			// padding: 0 *px 0 *px;
+		}
+	}
 
-    &__list{
-    
-    }
+	&__item {
 
-    &__item{
-        &--title{
-        
-        }
-        &--description{
-            select{
-                // 
-            }
-            input{
-                // 
-            }
-            textarea{
-                // 
-            }
-            input[type="text"]{
-                // 
-            }
-            input[type="email"]{
-                // 
-            }
-        }
-    }
-    
-    &__radio{
-    
-    }
+		&--title {
+			position: relative;
+			&.is-required {
+				&::after {
+					display: inline-block;
+					position: absolute;
+					top: 5px;
+					color: $red;
+					font-size: 1.0rem;
+					content: '＊';
+				}
+			}
+		}
 
-    &__privacy{
-    
-    }
+		&--description {
+			margin-top: 2px;
+			input {
+				width: 100%;
+				height: 40px;
+				padding: 0 10px;
+				border: none;
 
-    &__submit{
-    
-    }
+				border-bottom: 1px solid $black;
+
+				&:hover,
+				&:focus {
+					box-shadow: 0px 5px 5px -5px $blue;
+					outline: none;
+
+					border-bottom: 1px solid $blue;
+				}
+			}
+			textarea {
+				width: 100%;
+				height: 150px;
+				margin-top: 15px;
+				padding: 3px 10px;
+				border: 1px solid $black;
+				&:hover,
+				&:focus {
+					border: 1px solid $blue;
+					box-shadow: 0px 0px 5px 0px $blue;
+					outline: none;
+				}
+			}
+			input[type='text'] {
+				// 
+			}
+			input[type='email'] {
+				// 
+			}
+			input[type='radio'] {
+				display: none;
+
+				// checked判定はinputにて行う
+				// checkedな場合は隣接するlabelの疑似要素を操作
+				&:checked {
+					& + label {
+						&::before {
+							background: $blue;
+						}
+					}
+				}
+			}
+
+			&.is-request {// ご依頼内容
+				display: flex;
+				margin-top: 10px;
+				div {
+					margin-left: 50px;
+					&:first-child {
+						margin-left: 30px;
+					}
+				}
+				label {
+					position: relative;
+					transition: opacity .5s ease 0s;
+					&:hover {
+						opacity: .6;
+						cursor: pointer;
+					}
+					&::before,
+					&::after {
+						display: block;
+						position: absolute;
+						border-radius: 50%;
+						content: '';
+						transition: all .3s ease 0s;
+					}
+					&::before {
+						top: 5px;
+						left: -20px;
+						width: 16px;
+						height: 16px;
+						border: 1px solid $black;
+					}
+					&::after {
+						top: 10px;
+						left: -15px;
+						width: 6px;
+						height: 6px;
+						background: $white;
+					}
+				}
+			}
+		}
+		& + & {
+			margin-top: 20px;
+		}
+	}
+
+	&__submit {
+		display: block;
+		width: 100px;
+		height: 30px;
+		margin: 50px auto 0;
+		transition: opacity .5s ease 0s;
+		&:not(:disabled) {
+			border: 1px solid $blue;
+			background: $blue;
+			color: $white;
+			&:hover {
+				opacity: .6;
+			}
+		}
+		&:disabled {
+			border: 1px solid $black;
+			background: $white;
+			color: $black;
+		}
+	}
 }

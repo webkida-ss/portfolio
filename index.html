@@ -7,23 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>ShunSakakida's portfolio</title>
-
 	<meta name="description" content="ShunSakakidaのportfolio">
-
 	<link rel="icon" href="img/favicon.png">
-
-
-	<!-- プラグイン、外部モジュール
-        ■ CSS：リセット、FontAwesome（CDN）、Swiper、animate（wow）
-        ■ JS：jQuery（CDN）、Swiper、wow
-    -->
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/lib/reset.css"><!-- リセット -->
-	<!-- fontawesome ： https://fontawesome.com/account/cdn -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-		integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/lib/swiper.min.css"><!-- Swiper -->
 	<link rel="stylesheet" href="css/lib/animate.css"><!-- animate（wow） -->
 	<link rel="stylesheet" href="css/style.css"><!-- Original -->
 
@@ -31,7 +19,6 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"></script>
-	<script src="js/lib/swiper.min.js"></script><!-- Swiper -->
 	<script src="js/lib/wow.min.js"></script><!-- wow -->
 	<script src="js/script.js"></script><!-- Original -->
 
@@ -77,11 +64,6 @@
     ==============================================-->
 		<main class="main">
 
-			<!--
-        utilリンク 
-        <div class="util__link __link"><a href="#"></a></div>
-      -->
-
 			<!-- Top -->
 			<div id="top" class="top">
 				<div class="top__inner">
@@ -112,11 +94,9 @@
 							<span class="profile__bullets">ITに精通していること</span><br>
 							<span class="profile__bullets">保守性の高いコーディングが可能であること</span><br>
 							<span class="profile__bullets">技術的なキャッチアップが早いこと</span><br>
-							が私の強みです。<br>
+							が強みです。<br>
 							フルリモートで働くことに慣れており、素早いレスポンスを心がけています。<br>
 						</p>
-
-
 					</div><!-- /.profile__context -->
 				</div><!-- /.profile__inner -->
 			</section><!-- /.profile -->
@@ -125,14 +105,93 @@
 			<section id="service" class="service">
 				<h2 class="section__title service__title">Service</h2>
 				<div class="inner service__inner">
-				</div>
+					<div class="service__items">
+						<ul class="service__items--list">
+							<li>コーディング</li>
+							<li>レスポンシブ対応</li>
+							<li>デザイン</li>
+							<li>サーバ契約</li>
+							<li>ドメイン契約</li>
+							<li>SEO対策</li>
+							<li>セキュリティ対策</li>
+							<li>運用サポート</li>
+						</ul><!-- /.service__items--list -->
+						<p class="service__items--comments">
+							全部やります！
+						</p><!-- /.service__items--comments -->
+					</div><!-- /.service__items -->
+					<div class="service__context">
+						<div class="service__img"><img src="./img/site.png" alt="サイト"></div><!-- /.service__img -->
+						<div class="service__text">
+							コーディング・デザインに加え、
+							サーバ契約からサイト公開・運用サポートまで一括で承ります。<br>
+							既存サイトの改修 / WordPress化、
+							新規のLP / HP制作、WordPress構築いずれも対応可能です。<br>
+							ご気軽にご相談ください。
+						</div><!-- /.service__text -->
+					</div><!-- /.service__context -->
+				</div><!-- /.service__inner -->
+				<div class="util__link service__link"><a href="#contact">お問い合わせ</a></div>
 			</section><!-- /.service -->
 
 			<!-- Skill -->
 			<section id="skill" class="skill">
 				<h2 class="section__title skill__title">Skill</h2>
 				<div class="inner skill__inner">
-				</div>
+					<div class="skill__text">
+						<p>
+							Web制作に欠かせないコーディングスキルはもちろんのこと、<br>
+							サーバに関することやデザインツールも取扱い可能です。<br>
+							また、Javaを用いたWebアプリやバッチ、Vueを用いたSPAも作れます。<br>
+						</p>
+						<div class="skill__text--comment">
+							JavaScriptで動きをつけたり、<br>
+							SassでCSSをプログラムっぽく書いたり、<br>
+							Gitで細かくコミットしながら書くのが好きです。<br>
+							P.S. <br>
+							Javaが得意でOracle社のGold資格を持っています。
+						</div><!-- /.skill__text--comment -->
+					</div><!-- /.skill__text -->
+					<div class="skill__imgs">
+						<ul class="skill__list">
+							<li class="skill__item">
+								<img src="../img/skill/html.png" alt="HTML">
+								<p>HTML</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/sass.png" alt="Sass">
+								<p>Sass <br> (CSS)</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/javascript.png" alt="JavaScript">
+								<p>JavaScript<br>(jQuery)</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/wordpress.png" alt="WordPress">
+								<p>WordPress</p>
+							</li><!-- /.skill__item -->
+						</ul><!-- /.skill__list -->
+						<!-- 改行 -->
+						<ul class="skill__list">
+							<li class="skill__item">
+								<img src="../img/skill/git.png" alt="Git">
+								<p>Git</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/java.png" alt="Java">
+								<p>Java</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/spring.png" alt="Spring">
+								<p>Spring</p>
+							</li><!-- /.skill__item -->
+							<li class="skill__item">
+								<img src="../img/skill/vue.png" alt="Vue">
+								<p>Vue</p>
+							</li><!-- /.skill__item -->
+						</ul><!-- /.skill__list -->
+					</div><!-- /.skill__imgs -->
+				</div><!-- /.skill__inner -->
 			</section><!-- /.skill -->
 
 			<!-- Works -->
@@ -152,48 +211,48 @@
 						<form action="#" method="post">
 							<dl class="contact__list">
 								<div class="contact__item">
-									<!-- 種別 -->
-									<dt class="contact__item--title">種別</dt>
-									<dd class="contact__item--description">
-										<select name="kind" id="kind">
-											<option value="-">選択してください</option>
-											<option value="A">A</option>
-											<option value="B">B</option>
-										</select>
-									</dd>
-								</div><!-- /.contact__item -->
-								<div class="contact__item">
 									<!-- 氏名 -->
-									<dt class="contact__item--title">氏名</dt>
+									<dt class="contact__item--title is-required">お名前</dt>
 									<dd class="contact__item--description">
-										<input type="text" name="name" id="name" placeholder="氏名">
+										<input type="text" name="name" id="name" placeholder="榊田 峻">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
 									<!-- フリガナ -->
-									<dt class="contact__item--title">フリガナ</dt>
+									<dt class="contact__item--title is-required">フリガナ</dt>
 									<dd class="contact__item--description">
-										<input type="text" name="name_kana" id="name_kana" placeholder="フリガナ">
+										<input type="text" name="name_kana" id="name_kana" placeholder="サカキダ シュン">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
 									<!-- メールアドレス -->
-									<dt class="contact__item--title">メールアドレス</dt>
+									<dt class="contact__item--title is-required">電話番号</dt>
+									<dd class="contact__item--description">
+										<input type="email" name="email" id="phone" placeholder="09012345678">
+									</dd>
+								</div><!-- /.contact__item -->
+								<div class="contact__item" aria-required="">
+									<!-- メールアドレス -->
+									<dt class="contact__item--title is-required">メールアドレス</dt>
 									<dd class="contact__item--description">
 										<input type="email" name="email" id="email" placeholder="sample@example.com">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
-									<!-- 性別 -->
-									<dt class="contact__item--title">性別</dt>
-									<dd class="contact__item--description">
+									<!-- ご依頼内容 -->
+									<dt class="contact__item--title is-required">ご依頼内容</dt>
+									<dd class="contact__item--description is-request">
 										<div class="contact__radio">
-											<input type="radio" value="male" id="male" name="gender" checked>
-											<label for="male">男性</label>
+											<input type="radio" value="新規WEBサイト作成" id="create-request" name="request">
+											<label for="create-request">新規WEBサイト作成</label>
 										</div>
 										<div class="contact__radio">
-											<input type="radio" value="female" id="female" name="gender">
-											<label for="female">女性</label>
+											<input type="radio" value="既存WEBサイト改修" id="repair-request" name="request">
+											<label for="repair-request">既存WEBサイト改修</label>
+										</div>
+										<div class="contact__radio">
+											<input type="radio" value="既存WEBサイト改修" id="other-request" name="request">
+											<label for="other-request">その他</label>
 										</div>
 									</dd>
 								</div><!-- /.contact__item -->
@@ -205,11 +264,6 @@
 									</dd>
 								</div><!-- /.contact__item -->
 							</dl><!-- /.contact__list -->
-							<div class="contact__privacy">
-								<!-- プライバリーポリシー -->
-								<input type="checkbox" name="privacy" id="privacy" checked>
-								<label for="privacy">個人情報保護方針に同意する</label>
-							</div><!-- /.contact__privacy -->
 							<!-- 送信ボタン -->
 							<button class="contact__submit" id="submit" disabled>送信する</button>
 						</form>
@@ -225,9 +279,8 @@
     === フッター
     ==============================================-->
 		<footer class="footer">
-			<a href="#" class="util__floating"></a><!-- フローティングアイテム -->
 			<div class="inner footer__inner">
-
+				© 2021 Shun Sakakida
 			</div><!-- /.footer__inner -->
 		</footer><!-- /.footer -->
 

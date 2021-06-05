@@ -3,19 +3,64 @@
 	background: #e1f4f8;
 
 	&__inner {
-		// width:(*px / $layout-width-canvas-pc) * 100%;
-		// padding: 0 *px 0 *px;
-		@include mq(tab-only) {
-			// width:(*px / $layout-width-canvas-tab) * 100%;
-			// padding: 0 *px 0 *px;
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__items {
+		position: relative;
+		width: 40%;
+		height: 300px;
+		margin-right: auto;
+		background: url(../img/balloon/service-comment.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		&--list {
+			position: absolute;
+			top: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			li {
+				width: 50%;
+				margin: 0 auto;
+				line-height: 1.8;
+			}
 		}
-		@include mq(sp) {
-			// width:(*px / $layout-width-canvas-sp) * 100%;
-			// padding: 0 *px 0 *px;
+
+		&--comments {
+			position: absolute;
+			right: 30px;
+			bottom: -20px;
+			&::after {
+				display: block;
+				opacity: .5;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				content: '';
+
+				border-bottom: 7px solid $red-active;
+			}
 		}
 	}
 
-	&__title {
-		// 
+	&__context {
+		width: 60%;
+		margin-right: auto;
+	}
+	&__img{
+		width: 150px;
+		margin: 0 auto;
+	}
+	&__text {
+		margin-top: 30px;
+		line-height: 2;
+	}
+	&__link {
+		margin-top: 100px;
 	}
 }
