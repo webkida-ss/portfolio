@@ -769,6 +769,57 @@ a
     background: #e1f4f8;
 }
 
+.works__inner
+{
+    margin-top: 40px;
+}
+
+.works__list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.works__item
+{
+    overflow: hidden;
+
+    width: calc(((100% - (30px * 3)) / 4) - 1px);
+    margin-top: 30px;
+
+    -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+}
+
+.works__item:not(:nth-child(4n+1))
+{
+    margin-left: 30px;
+}
+
+.works__item img
+{
+    width: 100%;
+}
+
+.works__item p
+{
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.works__item:hover
+{
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+
+    opacity: .6;
+}
+
 .contact
 {
     padding: 70px 0;
