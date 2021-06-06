@@ -408,7 +408,7 @@ a
 
 .footer
 {
-    padding: 40px 0;
+    padding: 40px 0 20px;
 
     background: #e1f4f8;
 }
@@ -658,7 +658,7 @@ a
     font-weight: 700;
 
     position: absolute;
-    right: 30px;
+    right: 0;
     bottom: -20px;
 }
 

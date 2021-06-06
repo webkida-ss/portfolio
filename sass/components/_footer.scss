@@ -1,28 +1,29 @@
 .footer {
-	padding: 40px 0;
+	padding: 40px 0 20px;
 	background: #e1f4f8;
 
 	&__foreign-link {
 		width: 25%;
 		margin-right: auto;
-        
-        p{
-            &::after{
-                border-bottom: 1px solid $black;
-                width: 100%;
-                content: '';
-                display: block;
-            }
-        }
-        ul{
-            margin-top: 10px;
-        }
+
+		p {
+			&::after {
+				display: block;
+				width: 100%;
+				content: '';
+
+				border-bottom: 1px solid $black;
+			}
+		}
+		ul {
+			margin-top: 10px;
+		}
 		li {
 			padding-left: 10px;
 			font-size: 1rem;
-            &:hover{
-                opacity: .6;
-            }
+			&:hover {
+				opacity: .6;
+			}
 		}
 	}
 
