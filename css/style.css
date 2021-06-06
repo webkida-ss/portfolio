@@ -599,6 +599,11 @@ a
     margin: 0 auto;
 }
 
+.service__items--list li:nth-child(even)
+{
+    padding-left: 50px;
+}
+
 .service__items--comments
 {
     position: absolute;

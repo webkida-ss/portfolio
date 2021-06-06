@@ -50,50 +50,36 @@ $(function () {
 		}
 	});
 
-
-	/*********************************************
-	 * スライダー
-	 * jQueryプラグイン
-	 *********************************************/
-	new Swiper('.swiper-container', {
-		width: 274, // スライドサイズ
-		spaceBetween: 24, // スライド間
-		loop: true, // 最後に達したら先頭に戻る
-		loopedSlides: 6, // スライド数
-		pagination: { // ページネーション
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		breakpoints: { // ブレイクポイント
-			600: { // min-width 600
-				spaceBetween: 40,
-				width: 400,
-			}
-		}
-	});
-
-
 	/*********************************************
 	 * フォームバリデーション
 	 *********************************************/
 	let formName = $('#name'),
 		formKana = $('#name_kana'),
+		formPhone = $('#phone'),
 		formEmail = $('#email'),
-		formPrivacy = $('#privacy'),
+		formCreateRequest = $('#create-request'),
+		formRepairRequest = $('#repair-request'),
+		formOtherRequest = $('#other-request'),
 		formSubmit = $('#submit');
+	// チェックフラグ
 	let flgName = false,
 		flgKana = false,
+		flgPhone = false,
 		flgEmail = false,
-		flgPrivacy = false;
+		flgRequest = false;
+	// 正規表現
 	let regKana = /^([ァ-ン]|ー)+$/;
 	let regEmail = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
+	let regPhone = /^0[789]0[0-9]{4}[0-9]{4}$/;
+	let regPhoneHyphen = /^0[789]0-[0-9]{4}-[0-9]{4}$/;
 	// チェック方針：アウトな場合trueを返す
 	let checkEmpty = str => (str == '' || str == null); // 空チェック
 	let checkName = name => checkEmpty(name); // 氏名チェック
 	let checkKana = kana => (checkEmpty(kana) || kana.match(regKana) == null); // カタカナのみチェック
+	let checkPhone = phone => (checkEmpty(phone) ||
+		(phone.match(regPhone) == null && phone.match(regPhoneHyphen) == null)); // 電話番号チェック（ハイフンなし/あり両方とも許容）
 	let checkEmail = email => (checkEmpty(email) || email.match(regEmail) == null); // メールアドレスチェック
-	let checkDisable = () => (flgName && flgKana && flgEmail && flgPrivacy);
+	let checkDisable = () => (flgName && flgKana && flgPhone && flgEmail && flgRequest); // 必須項目総チェック
 	// 送信ボタンのdisableチェック、トグルによる変更
 	function submitBtnCheckAndToggle() {
 		if (checkDisable()) {
@@ -102,7 +88,7 @@ $(function () {
 			formSubmit.prop("disabled", true);
 		}
 	};
-	// [入力時] 氏名チェック
+	// [入力時] お名前チェック
 	formName.change(function () {
 		if (checkName(formName.val())) {
 			alert('氏名を入力してください。');
@@ -132,15 +118,28 @@ $(function () {
 		}
 		submitBtnCheckAndToggle();
 	});
-	// [入力時] プライバリーポリシーチェック
-	formPrivacy.change(function () {
-		if (formPrivacy.prop('checked') == true) {
-			flgPrivacy = true;
+	// [入力時] 電話番号チェック
+	formPhone.change(function () {
+		if (checkPhone(formPhone.val())) {
+			alert('電話形式で入力してください。');
+			flgPhone = false;
 		} else {
-			flgPrivacy = false;
+			flgPhone = true;
 		}
 		submitBtnCheckAndToggle();
 	});
-
+	// [入力時] ご依頼内容チェック
+	formCreateRequest.change(function () {
+		flgRequest = true;
+		submitBtnCheckAndToggle();
+	});
+	formRepairRequest.change(function () {
+		flgRequest = true;
+		submitBtnCheckAndToggle();
+	});
+	formOtherRequest.change(function () {
+		flgRequest = true;
+		submitBtnCheckAndToggle();
+	});
 
 })

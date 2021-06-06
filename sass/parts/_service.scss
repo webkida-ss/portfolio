@@ -27,6 +27,11 @@
 				width: 50%;
 				margin: 0 auto;
 				line-height: 1.8;
+
+				&:nth-child(even){
+					// 偶数番目だけずらす
+					padding-left: 50px;
+				}
 			}
 		}
 
