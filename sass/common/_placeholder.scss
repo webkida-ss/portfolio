@@ -11,3 +11,16 @@
 //     @extend %btn-base;
 // }
 
+
+%under-line-red{
+    &::after {
+        display: block;
+        opacity: .5;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        content: '';
+        border-bottom: 7px solid $red-active;
+    }
+}

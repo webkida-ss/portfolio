@@ -14,16 +14,9 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		&::after {
-			display: block;
-			opacity: .5;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			content: '';
+		font-size: 2rem;
+		font-family: $font-family-english;
 
-			border-bottom: 7px solid $red-active;
-		}
+		@extend %under-line-red;
 	}
 }
