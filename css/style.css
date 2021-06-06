@@ -135,7 +135,6 @@ a
 .util__floating
 {
     position: fixed;
-    z-index: 30;
     right: 30px;
     bottom: 30px;
 
@@ -800,11 +799,6 @@ a
     margin-left: 30px;
 }
 
-.works__item img
-{
-    width: 100%;
-}
-
 .works__item p
 {
     margin-top: 10px;
@@ -812,12 +806,81 @@ a
     text-align: center;
 }
 
-.works__item:hover
+.works__item:hover .works__img::before
+{
+    opacity: .7;
+}
+
+.works__item:hover .works__img::after
+{
+    opacity: 1;
+}
+
+.works__item:hover .works__img img
 {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
+}
 
-    opacity: .6;
+.works__img
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 95%;
+    margin: 5px auto 0;
+
+    border: .1px solid #afadad;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px 0 #afadad;
+            box-shadow: 0 0 5px 0 #afadad;
+}
+
+.works__img img
+{
+    -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+}
+
+.works__img::before,
+.works__img::after
+{
+    position: absolute;
+
+    -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+
+    opacity: 0;
+}
+
+.works__img::before
+{
+    z-index: 15;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: #333;
+}
+
+.works__img::after
+{
+    font-weight: 700;
+
+    z-index: 16;
+    top: 50%;
+    left: 50%;
+
+    content: 'CLICK';
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    color: #fff;
 }
 
 .contact
