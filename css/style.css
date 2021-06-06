@@ -385,9 +385,48 @@ a
 
 .footer
 {
-    padding: 70px 0;
+    padding: 40px 0;
 
     background: #e1f4f8;
+}
+
+.footer__foreign-link
+{
+    width: 25%;
+    margin-right: auto;
+}
+
+.footer__foreign-link p::after
+{
+    display: block;
+
+    width: 100%;
+
+    content: '';
+
+    border-bottom: 1px solid #333;
+}
+
+.footer__foreign-link ul
+{
+    margin-top: 10px;
+}
+
+.footer__foreign-link li
+{
+    font-size: 1rem;
+
+    padding-left: 10px;
+}
+
+.footer__foreign-link li:hover
+{
+    opacity: .6;
+}
+
+.footer__copyright
+{
+    text-align: center;
 }
 
 .top
