@@ -1,0 +1,24 @@
+{
+    "worksDataList":[
+        {
+            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
+            "img":"./img/works/goodpasta.png",
+            "title":"デイトラ 中級編課題"
+        },
+        {
+            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
+            "img":"./img/works/goodpasta.png",
+            "title":"デイトラ 中級編最終課題"
+        },
+        {
+            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
+            "img":"./img/works/goodpasta.png",
+            "title":"ちづみさん 練習用デモサイト1"
+        },
+        {
+            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
+            "img":"./img/works/goodpasta.png",
+            "title":"ちづみさん 練習用デモサイト2"
+        }
+    ]
+}

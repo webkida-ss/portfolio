@@ -73,6 +73,26 @@ $(function () {
 	// });
 
 	/*********************************************
+	 * Works
+	 * 外部ファイルからデータの読み込みと出力
+	 *********************************************/
+	let $worksList = $("#js-works-list");
+
+	$.getJSON("./js/data/works.json", function (res) {
+		let innerHTML = `<li class="works__item"><a href="$path">
+		<div class="works__img"><img src="$img" alt="title"></div><p>$title</p></a></li>`;
+		let worksDataList = res.worksDataList;
+		for (let i = 0; i < worksDataList.length; i++) {
+			let data = worksDataList[i];
+			let path = data.path;
+			let img = data.img;
+			let title = data.title;
+			$worksList.append(innerHTML.replaceAll("$path", path).replaceAll("$img", img).replaceAll("$title", title));
+		}
+	});
+
+
+	/*********************************************
 	 * フォームバリデーション
 	 *********************************************/
 	let formName = $('#name'),
