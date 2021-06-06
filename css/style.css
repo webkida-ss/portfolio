@@ -205,6 +205,7 @@ a
 
 .header.is-white
 {
+    border-bottom: 1px solid #e1f4f8;
     background: #fff;
 }
 
@@ -653,6 +654,9 @@ a
 
 .service__items--comments
 {
+    font-size: 2rem;
+    font-weight: 700;
+
     position: absolute;
     right: 30px;
     bottom: -20px;
@@ -826,14 +830,14 @@ a
             transition: all .5s ease 0s;
 }
 
-.works__item:not(:nth-child($works-item-num*n+1))
+.works__item:not(:nth-child(4n+1))
 {
     margin-left: 30px;
 }
 
 .works__item p
 {
-    margin-top: 10px;
+    margin-top: 20px;
 
     text-align: center;
 }

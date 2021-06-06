@@ -2,6 +2,9 @@
 	padding: 70px 0;
 	background: #e1f4f8;
 
+	$works-item-margin: 30px;
+	$works-item-num: 4;
+
 	&__inner {
 		margin-top: 40px;
 	}
@@ -10,20 +13,17 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-
 	&__item {
-		$works-item-margin: 30px;
-		$works-item-num: 4;
 		width: calc(((100% - (#{$works-item-margin} * (#{$works-item-num} - 1))) / #{$works-item-num}) - 1px);
 		margin-top: 30px;
 		overflow: hidden;
 		transition: all .5s ease 0s;
 		// 左端のだけはmarginを当てない
-		&:not(:nth-child($works-item-num*n+1)) {
+		&:not(:nth-child(#{$works-item-num}n+1)) {
 			margin-left: $works-item-margin;
 		}
 		p {
-			margin-top: 10px;
+			margin-top: 20px;
 			text-align: center;
 		}
 		&:hover {
