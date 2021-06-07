@@ -206,4 +206,21 @@ $(function () {
 		submitBtnCheckAndToggle();
 	});
 
-})
+});
+
+// フォーム送信後メッセージ
+function showThanksMessage() {
+	// メールアドレス取得
+	let email = document.getElementById('email').value;
+	let name = document.getElementById('name').value;
+	let thanksMessage = document.getElementById('thanksMessage');
+	let spans = thanksMessage.getElementsByTagName('span');
+
+	// メールアドレスを取得できた場合
+	if (email !== '' && name !== '') {
+		document.contactForm.reset(); //フォーム内容をリセット
+		thanksMessage.style.display = 'block'; // 送信後メッセージ部分を表示
+		spans[0].innerHTML = name; // 名前
+		spans[1].innerHTML = email; // メールアドレス
+	}
+}

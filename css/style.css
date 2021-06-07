@@ -1060,6 +1060,17 @@ a
     background: #fff;
 }
 
+.contact__thanks-message
+{
+    font-size: 1.6rem;
+
+    display: none;
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+
 @media (min-width: 560px) and (max-width: 959px)
 {
     .profile,
@@ -1280,6 +1291,14 @@ a
     .contact__item--description.is-request label::after
     {
         top: 7px;
+    }
+    .contact__submit
+    {
+        margin: 20px auto 0;
+    }
+    .contact__thanks-message
+    {
+        font-size: 1.2rem;
     }
 }
 

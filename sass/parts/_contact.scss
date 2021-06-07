@@ -162,6 +162,9 @@
 		height: 30px;
 		margin: 50px auto 0;
 		transition: opacity .5s ease 0s;
+		@include mq(sp) {
+			margin: 20px auto 0;
+		}
 		&:not(:disabled) {
 			border: 1px solid $blue;
 			background: $blue;
@@ -174,6 +177,16 @@
 			border: 1px solid $black;
 			background: $white;
 			color: $black;
+		}
+	}
+
+	&__thanks-message{
+		margin-top: 20px;
+		display: none;
+		font-size: 1.6rem;
+		text-align: center;
+		@include mq(sp) {
+			font-size: 1.2rem;
 		}
 	}
 }

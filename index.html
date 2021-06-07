@@ -221,34 +221,36 @@
 
 					<!-- お問い合わせフォーム -->
 					<div class="contact__content">
-						<form action="#" method="post">
+						<form
+							action="https://docs.google.com/forms/d/e/1FAIpQLSdw3V8S--Q773CorDYxnxyoaVgIFZby8R2DZ9jmo9WHNr0Jbw/formResponse"
+							method="post" target="contact-dummy-iframe" name="contactForm">
 							<dl class="contact__list">
 								<div class="contact__item">
-									<!-- 氏名 -->
+									<!-- お名前 -->
 									<dt class="contact__item--title is-required">お名前</dt>
 									<dd class="contact__item--description">
-										<input type="text" name="name" id="name" placeholder="榊田 峻">
+										<input type="text" name="entry.2005620554" id="name" placeholder="榊田 峻">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
 									<!-- フリガナ -->
 									<dt class="contact__item--title is-required">フリガナ</dt>
 									<dd class="contact__item--description">
-										<input type="text" name="name_kana" id="name_kana" placeholder="サカキダ シュン">
+										<input type="text" name="entry.1354867744" id="name_kana" placeholder="サカキダ シュン">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
 									<!-- 電話番号 -->
 									<dt class="contact__item--title is-required">電話番号</dt>
 									<dd class="contact__item--description">
-										<input type="tel" name="phone" id="phone" placeholder="09012345678">
+										<input type="tel" name="entry.1166974658" id="phone" placeholder="09012345678">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
 									<!-- メールアドレス -->
 									<dt class="contact__item--title is-required">メールアドレス</dt>
 									<dd class="contact__item--description">
-										<input type="email" name="email" id="email" placeholder="sample@example.com">
+										<input type="email" name="entry.1045781291" id="email" placeholder="sample@example.com">
 									</dd>
 								</div><!-- /.contact__item -->
 								<div class="contact__item">
@@ -256,15 +258,15 @@
 									<dt class="contact__item--title is-required">ご依頼内容</dt>
 									<dd class="contact__item--description is-request">
 										<div class="contact__radio">
-											<input type="radio" value="新規WEBサイト作成" id="create-request" name="request-context">
+											<input type="radio" value="新規WEBサイト作成" id="create-request" name="entry.1680078961">
 											<label for="create-request">新規WEBサイト作成</label>
 										</div>
 										<div class="contact__radio">
-											<input type="radio" value="既存WEBサイト改修" id="repair-request" name="request-context">
+											<input type="radio" value="既存WEBサイト改修" id="repair-request" name="entry.1680078961">
 											<label for="repair-request">既存WEBサイト改修</label>
 										</div>
 										<div class="contact__radio">
-											<input type="radio" value="既存WEBサイト改修" id="other-request" name="request-context">
+											<input type="radio" value="既存WEBサイト改修" id="other-request" name="entry.1680078961">
 											<label for="other-request">その他</label>
 										</div>
 									</dd>
@@ -273,13 +275,24 @@
 									<!-- 備考 -->
 									<dt class="contact__item--title">備考</dt>
 									<dd class="contact__item--description">
-										<textarea></textarea>
+										<textarea name="entry.839337160"></textarea>
 									</dd>
 								</div><!-- /.contact__item -->
 							</dl><!-- /.contact__list -->
 							<!-- 送信ボタン -->
 							<button class="contact__submit" id="submit" disabled>送信する</button>
 						</form>
+						<iframe name="contact-dummy-iframe" style="display:none;" onload="showThanksMessage()"></iframe>
+
+						<!-- 送信後ゾーン：普段は非表示 ------------------------------------------------------------------------>
+						<div class="contact__thanks-message wow animated fadeIn" id="thanksMessage">
+							<div>お問い合わせありがとうございます！</div>
+							<div>
+								<span></span>様 <br>
+								メールアドレス：<span></span>にて承りました。
+							</div>
+						</div>
+
 					</div><!-- /.contact__content -->
 				</div><!-- /.contact__inner -->
 			</section><!-- /.contact -->
