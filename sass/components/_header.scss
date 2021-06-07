@@ -5,7 +5,7 @@
 	z-index: map-get($layer,header);
 	width: 100%;
 	height: $header-height-pc;
-
+	
 	@include mq(sp) {
 		height: $header-height-sp;
 	}

@@ -5,6 +5,9 @@
 		display: flex;
 		align-items: center;
 		margin-top: 40px;
+		@include mq(tab) {
+			display: block;
+		}
 	}
 	&__text {
 		line-height: 2;
@@ -29,6 +32,10 @@
 			$slill-comment-after-place: -30px;
 			$slill-comment-after-size: 30px;
 
+			// タブレット以下では表示しない
+			@include mq(tab) {
+				display: none;
+			}
 
 			&::before,
 			&::after {
@@ -61,6 +68,10 @@
 		& + & {
 			margin-top: 30px;
 		}
+		@include mq(tab) {
+			justify-content: space-around;
+			margin-top: 30px;
+		}
 	}
 	&__item {
 		font-weight: $font-weight-bold;
@@ -73,6 +84,9 @@
 		}
 		& + & {
 			margin-left: 50px;
+			@include mq(tab) {
+				margin-left: 0;
+			}
 		}
 	}
 }

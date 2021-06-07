@@ -2,8 +2,12 @@
 	padding: 70px 0;
 	background: #e1f4f8;
 
-	$works-item-margin: 30px;
-	$works-item-num: 4;
+	$works-item-margin-pc: 30px;
+	$works-item-num-pc: 4;
+	$works-item-margin-tab: 25px;
+	$works-item-num-tab: 3;
+	$works-item-margin-sp: 10px;
+	$works-item-num-sp: 2;
 
 	&__inner {
 		margin-top: 40px;
@@ -14,14 +18,30 @@
 		flex-wrap: wrap;
 	}
 	&__item {
-		width: calc(((100% - (#{$works-item-margin} * (#{$works-item-num} - 1))) / #{$works-item-num}) - 1px);
 		margin-top: 30px;
 		overflow: hidden;
 		transition: all .5s ease 0s;
+		
 		// 左端のだけはmarginを当てない
-		&:not(:nth-child(#{$works-item-num}n+1)) {
-			margin-left: $works-item-margin;
+		@include mq(pc) {
+			width: calc(((100% - (#{$works-item-margin-pc} * (#{$works-item-num-pc} - 1))) / #{$works-item-num-pc}) - 1px);
+			&:not(:nth-child(#{$works-item-num-pc}n+1)) {
+				margin-left: $works-item-margin-pc;
+			}
 		}
+		@include mq(tab-only) {
+			width: calc(((100% - (#{$works-item-margin-tab} * (#{$works-item-num-tab} - 1))) / #{$works-item-num-tab}) - 1px);
+			&:not(:nth-child(#{$works-item-num-tab}n+1)) {
+				margin-left: $works-item-margin-tab;
+			}
+		}
+		@include mq(sp) {
+			width: calc(((100% - (#{$works-item-margin-sp} * (#{$works-item-num-sp} - 1))) / #{$works-item-num-sp}) - 1px);
+			&:not(:nth-child(#{$works-item-num-sp}n+1)) {
+				margin-left: $works-item-margin-sp;
+			}
+		}
+
 		p {
 			margin-top: 20px;
 			text-align: center;
@@ -81,9 +101,9 @@
 		}
 	}
 
-	&__basic{
+	&__basic {
 		margin-top: 20px;
-		text-align: center;
 		font-size: 1rem;
+		text-align: center;
 	}
 }
