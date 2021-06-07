@@ -1,9 +1,5 @@
 .profile {
-	padding: 70px 0;
-
-	@include mq(sp) {
-		padding: 30px 0;
-	}
+	@extend %section-padding;
 
 	&__inner {
 		display: flex;
@@ -29,7 +25,10 @@
 		@include mq(tab) {
 			// margin-right: auto;
 		}
-
+		@include mq(sp) {
+			width: 140px;
+			height: 140px;
+		}
 		img {
 			height: 100%;
 			border-radius: 50%;
@@ -51,18 +50,20 @@
 				margin-right: 20px;
 			}
 		}
-		@include mq(tab-only) {
+		@include mq(tab) {
 			margin: 0 0 0 40px;
 		}
 	}
 
 	&__context {
 		margin-left: 50px;
-		// font-size: 1.4rem;
 		letter-spacing: .8px;
 
 		@include mq(tab) {
 			margin: 0 auto;
+		}
+		@include mq(sp) {
+			font-size: 1.2rem;
 		}
 	}
 	&__name {
@@ -72,6 +73,9 @@
 		@include mq(tab) {
 			text-align: center;
 			margin-top: 20px;
+		}
+		@include mq(sp) {
+			font-size: 2rem;
 		}
 	}
 	&__overview {

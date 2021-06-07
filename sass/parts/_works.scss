@@ -1,5 +1,5 @@
 .works {
-	padding: 70px 0;
+	@extend %section-padding;
 	background: #e1f4f8;
 
 	$works-item-margin-pc: 30px;
@@ -40,11 +40,15 @@
 			&:not(:nth-child(#{$works-item-num-sp}n+1)) {
 				margin-left: $works-item-margin-sp;
 			}
+			font-size: 1.2rem;
 		}
 
 		p {
 			margin-top: 20px;
 			text-align: center;
+			@include mq(sp) {
+				margin-top: 10px;
+			}
 		}
 		&:hover {
 			// item全体をクリックしたとき

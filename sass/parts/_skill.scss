@@ -1,6 +1,6 @@
 .skill {
-	padding: 70px 0;
-
+	@extend %section-padding;
+	
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -12,7 +12,9 @@
 	&__text {
 		line-height: 2;
 		letter-spacing: .8px;
-
+		@include mq(sp) {
+			font-size: 1.2rem;
+		}
 		$slill-comment-border: 1px solid $white;
 		$slill-comment-bg: $red-active;
 		&--comment {
@@ -78,6 +80,9 @@
 		font-size: 1.4rem;
 		font-family: $font-family-english;
 		text-align: center;
+		@include mq(sp) {
+			font-size: 1.2rem;
+		}
 
 		img {
 			width: 80px;

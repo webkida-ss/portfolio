@@ -1,5 +1,5 @@
 .contact {
-	padding: 70px 0;
+	@extend %section-padding;
 
 	&__inner {
 		width: (700px / $layout-width-canvas-pc) * 100%;
@@ -28,6 +28,9 @@
 					content: '＊';
 				}
 			}
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
 		}
 
 		&--description {
@@ -47,6 +50,9 @@
 
 					border-bottom: 1px solid $blue;
 				}
+				@include mq(sp) {
+					font-size: 1.2rem;
+				}
 			}
 			textarea {
 				width: 100%;
@@ -54,11 +60,15 @@
 				margin-top: 15px;
 				padding: 3px 10px;
 				border: 1px solid $black;
+				letter-spacing: 1px;
 				&:hover,
 				&:focus {
 					border: 1px solid $blue;
 					box-shadow: 0px 0px 5px 0px $blue;
 					outline: none;
+				}
+				@include mq(sp) {
+					font-size: 1.2rem;
 				}
 			}
 			input[type='text'] {
@@ -79,20 +89,32 @@
 						}
 					}
 				}
+				
 			}
 
 			&.is-request {// ご依頼内容
 				display: flex;
 				margin-top: 10px;
+				@include mq(sp) {
+					font-size: 1.2rem;
+					display: block;
+				}
 				div {
 					margin-left: 50px;
 					&:first-child {
 						margin-left: 30px;
 					}
+					&:not(:first-child){
+						@include mq(sp) {
+							margin-top: 5px;
+							margin-left: 30px;
+						}
+					}
 				}
 				label {
 					position: relative;
 					transition: opacity .5s ease 0s;
+
 					&:hover {
 						opacity: .6;
 						cursor: pointer;
@@ -111,6 +133,9 @@
 						width: 16px;
 						height: 16px;
 						border: 1px solid $black;
+						@include mq(sp) {
+							top: 2px;
+						}
 					}
 					&::after {
 						top: 10px;
@@ -118,12 +143,16 @@
 						width: 6px;
 						height: 6px;
 						background: $white;
+						@include mq(sp) {
+							top: 7px;
+						}
 					}
 				}
 			}
 		}
 		& + & {
 			margin-top: 20px;
+
 		}
 	}
 

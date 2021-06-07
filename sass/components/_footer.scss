@@ -5,13 +5,17 @@
 	&__foreign-link {
 		width: 25%;
 		margin-right: auto;
-
+		@include mq(sp) {
+			width: 100%;
+		}
 		p {
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
 			&::after {
 				display: block;
 				width: 100%;
 				content: '';
-
 				border-bottom: 1px solid $black;
 			}
 		}
@@ -29,5 +33,9 @@
 
 	&__copyright {
 		text-align: center;
+		@include mq(sp) {
+			margin-top: 20px;
+			font-size: 1.4rem;
+		}
 	}
 }

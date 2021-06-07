@@ -17,6 +17,15 @@
     border-bottom: 7px solid #f1b4b4;
 }
 
+.profile,
+.service,
+.skill,
+.works,
+.contact
+{
+    padding: 70px 0;
+}
+
 *,
 *::before,
 *::after
@@ -439,11 +448,6 @@ a
             transform: translate(-50%, -50%);
 }
 
-.profile
-{
-    padding: 70px 0;
-}
-
 .profile__inner
 {
     display: -webkit-box;
@@ -552,8 +556,6 @@ a
 
 .service
 {
-    padding: 70px 0;
-
     background: #e1f4f8;
 }
 
@@ -641,11 +643,6 @@ a
 .service__link
 {
     margin-top: 100px;
-}
-
-.skill
-{
-    padding: 70px 0;
 }
 
 .skill__inner
@@ -756,8 +753,6 @@ a
 
 .works
 {
-    padding: 70px 0;
-
     background: #e1f4f8;
 }
 
@@ -879,11 +874,6 @@ a
     text-align: center;
 }
 
-.contact
-{
-    padding: 70px 0;
-}
-
 .contact__inner
 {
     width: 54.6875%;
@@ -939,6 +929,8 @@ a
     height: 150px;
     margin-top: 15px;
     padding: 3px 10px;
+
+    letter-spacing: 1px;
 
     border: 1px solid #333;
 }
@@ -1070,6 +1062,14 @@ a
 
 @media (min-width: 560px) and (max-width: 959px)
 {
+    .profile,
+    .service,
+    .skill,
+    .works,
+    .contact
+    {
+        padding: 50px 0;
+    }
     .section__title
     {
         font-size: 3.2rem;
@@ -1094,15 +1094,6 @@ a
     {
         margin-left: 25px;
     }
-    .profile__sns
-    {
-        margin: 0 0 0 40px;
-    }
-    .service__context
-    {
-        width: 100%;
-        margin: 0 auto;
-    }
     .works__item
     {
         width: calc(((100% - (25px * (3 - 1))) / 3) - 1px);
@@ -1115,6 +1106,14 @@ a
 
 @media (max-width: 559px)
 {
+    .profile,
+    .service,
+    .skill,
+    .works,
+    .contact
+    {
+        padding: 30px 0;
+    }
     .section__title
     {
         font-size: 2.4rem;
@@ -1186,17 +1185,101 @@ a
     {
         display: block;
     }
-    .profile
+    .footer__foreign-link
     {
-        padding: 30px 0;
+        width: 100%;
+    }
+    .footer__foreign-link p
+    {
+        font-size: 1.4rem;
+    }
+    .footer__copyright
+    {
+        font-size: 1.4rem;
+
+        margin-top: 20px;
+    }
+    .top__text
+    {
+        font-size: 1.6rem;
+
+        width: auto;
+
+        text-align: center;
+    }
+    .top__text::after
+    {
+        display: none;
+    }
+    .profile__icon
+    {
+        width: 140px;
+        height: 140px;
+    }
+    .profile__context
+    {
+        font-size: 1.2rem;
+    }
+    .profile__name
+    {
+        font-size: 2rem;
+    }
+    .service__text
+    {
+        font-size: 1.2rem;
+    }
+    .skill__text
+    {
+        font-size: 1.2rem;
+    }
+    .skill__item
+    {
+        font-size: 1.2rem;
     }
     .works__item
     {
+        font-size: 1.2rem;
+
         width: calc(((100% - (10px * (2 - 1))) / 2) - 1px);
     }
     .works__item:not(:nth-child(2n+1))
     {
         margin-left: 10px;
+    }
+    .works__item p
+    {
+        margin-top: 10px;
+    }
+    .contact__item--title
+    {
+        font-size: 1.4rem;
+    }
+    .contact__item--description input
+    {
+        font-size: 1.2rem;
+    }
+    .contact__item--description textarea
+    {
+        font-size: 1.2rem;
+    }
+    .contact__item--description.is-request
+    {
+        font-size: 1.2rem;
+
+        display: block;
+    }
+    .contact__item--description.is-request div:not(:first-child)
+    {
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .contact__item--description.is-request label::before
+    {
+        top: 2px;
+    }
+    .contact__item--description.is-request label::after
+    {
+        top: 7px;
     }
 }
 
@@ -1223,6 +1306,10 @@ a
         -ms-flex-align: center;
         align-items: center;
     }
+    .profile__sns
+    {
+        margin: 0 0 0 40px;
+    }
     .profile__context
     {
         margin: 0 auto;
@@ -1240,6 +1327,11 @@ a
     .service__items
     {
         display: none;
+    }
+    .service__context
+    {
+        width: 100%;
+        margin: 0 auto;
     }
     .service__link
     {
