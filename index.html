@@ -80,8 +80,10 @@
 					<div class="profile__imgs">
 						<div class="profile__icon"><img src="./img/profile-icon-transparent.png" alt="アイコン"></div>
 						<div class="profile__sns">
-							<a href="https://twitter.com/webkida1"><img src="../img/sns/twitter.png" alt="twitter"></a>
-							<a href="https://github.com/webkida-ss"><img src="../img/sns/github.png" alt="github"></a>
+							<a href="https://twitter.com/webkida1" class="wow animated" id="js-twitter">
+								<img src="../img/sns/twitter.png" alt="twitter"></a>
+							<a href="https://github.com/webkida-ss" class="wow" id="js-github">
+								<img src="../img/sns/github.png" alt="github"></a>
 						</div>
 					</div><!-- /.profile__imgs -->
 					<div class="profile__context">
@@ -107,7 +109,7 @@
 			<section id="service" class="service wow fadeInUp">
 				<h2 class="section__title service__title">Service</h2>
 				<div class="inner service__inner">
-					<div class="service__items">
+					<div class="service__items wow bounceIn">
 						<ul class="service__items--list">
 							<li>コーディング</li>
 							<li>レスポンシブ対応</li>
@@ -133,7 +135,9 @@
 						</div><!-- /.service__text -->
 					</div><!-- /.service__context -->
 				</div><!-- /.service__inner -->
-				<div class="util__link service__link"><a href="#contact">お問い合わせ</a></div>
+				<div class="util__link service__link wow pulse" data-wow-iteration="5" data-wow-duration="1.8s">
+					<a href="#contact">お問い合わせ</a>
+				</div>
 			</section><!-- /.service -->
 
 			<!-- Skill -->

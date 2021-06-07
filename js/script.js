@@ -6,6 +6,18 @@ $(function () {
 	new WOW().init();
 
 	/*********************************************
+	 * WOW hover時のクラス
+	 *********************************************/
+	$('#js-twitter').add('#js-github').hover(
+		function () {
+			$(this).addClass('animated pulse');
+		},
+		function () {
+			$(this).removeClass('animated pulse');
+		}
+	);
+
+	/*********************************************
 	 * スムーススクロール
 	 *********************************************/
 	$('a[href^="#"]').click(function () {
