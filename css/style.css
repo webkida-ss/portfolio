@@ -919,6 +919,15 @@ a
     color: #fff;
 }
 
+.works__basic
+{
+    font-size: 1rem;
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+
 .contact
 {
     padding: 70px 0;
