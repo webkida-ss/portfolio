@@ -18,6 +18,10 @@
 	&__item {
 		&--title {
 			position: relative;
+
+			@include mq(sp) {
+				font-size: 1.4rem;
+			}
 			&.is-required {
 				&::after {
 					display: inline-block;
@@ -27,9 +31,6 @@
 					font-size: 1.0rem;
 					content: '＊';
 				}
-			}
-			@include mq(sp) {
-				font-size: 1.4rem;
 			}
 		}
 
@@ -42,6 +43,9 @@
 				border: none;
 
 				border-bottom: 1px solid $black;
+				@include mq(sp) {
+					font-size: 1.2rem;
+				}
 
 				&:hover,
 				&:focus {
@@ -49,9 +53,6 @@
 					outline: none;
 
 					border-bottom: 1px solid $blue;
-				}
-				@include mq(sp) {
-					font-size: 1.2rem;
 				}
 			}
 			textarea {
@@ -61,14 +62,15 @@
 				padding: 3px 10px;
 				border: 1px solid $black;
 				letter-spacing: 1px;
+
+				@include mq(sp) {
+					font-size: 1.2rem;
+				}
 				&:hover,
 				&:focus {
 					border: 1px solid $blue;
 					box-shadow: 0px 0px 5px 0px $blue;
 					outline: none;
-				}
-				@include mq(sp) {
-					font-size: 1.2rem;
 				}
 			}
 			input[type='text'] {
@@ -89,22 +91,22 @@
 						}
 					}
 				}
-				
 			}
 
 			&.is-request {// ご依頼内容
 				display: flex;
 				margin-top: 10px;
+
 				@include mq(sp) {
-					font-size: 1.2rem;
 					display: block;
+					font-size: 1.2rem;
 				}
 				div {
 					margin-left: 50px;
 					&:first-child {
 						margin-left: 30px;
 					}
-					&:not(:first-child){
+					&:not(:first-child) {
 						@include mq(sp) {
 							margin-top: 5px;
 							margin-left: 30px;
@@ -133,6 +135,7 @@
 						width: 16px;
 						height: 16px;
 						border: 1px solid $black;
+
 						@include mq(sp) {
 							top: 2px;
 						}
@@ -143,6 +146,7 @@
 						width: 6px;
 						height: 6px;
 						background: $white;
+
 						@include mq(sp) {
 							top: 7px;
 						}
@@ -152,7 +156,6 @@
 		}
 		& + & {
 			margin-top: 20px;
-
 		}
 	}
 
@@ -162,6 +165,7 @@
 		height: 30px;
 		margin: 50px auto 0;
 		transition: opacity .5s ease 0s;
+
 		@include mq(sp) {
 			margin: 20px auto 0;
 		}
@@ -180,11 +184,12 @@
 		}
 	}
 
-	&__thanks-message{
-		margin-top: 20px;
+	&__thanks-message {
 		display: none;
+		margin-top: 20px;
 		font-size: 1.6rem;
 		text-align: center;
+
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
