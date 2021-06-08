@@ -1,12 +1,14 @@
 .service {
-	@extend %section-padding;	
 	background: #e1f4f8;
-	
+
+	@extend %section-padding;
+
 	&__inner {
 		display: flex;
 		align-items: center;
 		margin-top: 40px;
 		margin-bottom: 40px;
+
 		@include mq(tab) {
 			display: block;
 		}
@@ -20,8 +22,8 @@
 		background: url(../img/balloon/service-comment.png);
 		background-size: contain;
 		background-repeat: no-repeat;
-		
 		// タブレット以下では表示しない
+
 		@include mq(tab) {
 			display: none;
 		}
@@ -58,6 +60,7 @@
 	&__context {
 		width: 60%;
 		margin-right: auto;
+
 		@include mq(tab) {
 			width: 100%;
 			margin: 0 auto;
@@ -70,12 +73,14 @@
 	&__text {
 		margin-top: 30px;
 		line-height: 2;
+
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
 	}
 	&__link {
 		margin-top: 100px;
+
 		@include mq(tab) {
 			margin-top: 30px;
 		}
