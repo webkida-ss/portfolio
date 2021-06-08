@@ -5,13 +5,14 @@
 	z-index: map-get($layer,header);
 	width: 100%;
 	height: $header-height-pc;
-	
+
 	@include mq(sp) {
 		height: $header-height-sp;
 	}
 
 	&.is-white {
 		background: $white;
+
 		border-bottom: 1px solid $light-blue;
 	}
 	&__title {
