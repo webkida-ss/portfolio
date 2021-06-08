@@ -1,7 +1,7 @@
 .works {
-	@extend %section-padding;
 	background: #e1f4f8;
 
+	@extend %section-padding;
 	$works-item-margin-pc: 30px;
 	$works-item-num-pc: 4;
 	$works-item-margin-tab: 25px;
@@ -21,8 +21,8 @@
 		margin-top: 30px;
 		overflow: hidden;
 		transition: all .5s ease 0s;
-		
 		// 左端のだけはmarginを当てない
+
 		@include mq(pc) {
 			width: calc(((100% - (#{$works-item-margin-pc} * (#{$works-item-num-pc} - 1))) / #{$works-item-num-pc}) - 1px);
 			&:not(:nth-child(#{$works-item-num-pc}n+1)) {
@@ -37,15 +37,16 @@
 		}
 		@include mq(sp) {
 			width: calc(((100% - (#{$works-item-margin-sp} * (#{$works-item-num-sp} - 1))) / #{$works-item-num-sp}) - 1px);
+			font-size: 1.2rem;
 			&:not(:nth-child(#{$works-item-num-sp}n+1)) {
 				margin-left: $works-item-margin-sp;
 			}
-			font-size: 1.2rem;
 		}
 
 		p {
 			margin-top: 20px;
 			text-align: center;
+
 			@include mq(sp) {
 				margin-top: 10px;
 			}
