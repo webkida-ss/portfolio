@@ -332,6 +332,8 @@ a
 
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+
+    background: #fff;
 }
 
 .is-checked .header__drawer--bar:nth-of-type(2)
@@ -345,6 +347,8 @@ a
 
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+
+    background: #fff;
 }
 
 .header__drawer-bg
