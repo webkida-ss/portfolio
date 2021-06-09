@@ -24,19 +24,19 @@
 		// 左端のだけはmarginを当てない
 
 		@include mq(pc) {
-			width: calc(((100% - (#{$works-item-margin-pc} * (#{$works-item-num-pc} - 1))) / #{$works-item-num-pc}) - 1px);
+			width: getCardWith($works-item-margin-pc,$works-item-num-pc);
 			&:not(:nth-child(#{$works-item-num-pc}n+1)) {
 				margin-left: $works-item-margin-pc;
 			}
 		}
 		@include mq(tab-only) {
-			width: calc(((100% - (#{$works-item-margin-tab} * (#{$works-item-num-tab} - 1))) / #{$works-item-num-tab}) - 1px);
+			width: getCardWith($works-item-margin-tab,$works-item-num-tab);
 			&:not(:nth-child(#{$works-item-num-tab}n+1)) {
 				margin-left: $works-item-margin-tab;
 			}
 		}
 		@include mq(sp) {
-			width: calc(((100% - (#{$works-item-margin-sp} * (#{$works-item-num-sp} - 1))) / #{$works-item-num-sp}) - 1px);
+			width: getCardWith($works-item-margin-sp,$works-item-num-sp);
 			font-size: 1.2rem;
 			&:not(:nth-child(#{$works-item-num-sp}n+1)) {
 				margin-left: $works-item-margin-sp;
