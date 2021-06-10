@@ -5,6 +5,7 @@
 		display: flex;
 		align-items: center;
 		margin-top: 40px;
+		padding: 0 5px;
 		@include mq(tab) {
 			display: block;
 		}
@@ -12,6 +13,7 @@
 	&__text {
 		line-height: 2;
 		letter-spacing: .8px;
+		
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
@@ -20,7 +22,7 @@
 		&--comment {
 			display: inline-block;
 			position: relative;
-			margin: 60px 0 0 120px;
+			margin: 60px 0 0 65px;
 			padding: 12px 8px;
 			border: $slill-comment-border;
 			border-radius: 20px;
