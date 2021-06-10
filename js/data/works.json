@@ -1,12 +1,12 @@
 {
     "worksDataList":[
         {
-            "path":"http://daytra-2nd-task.webkida.site/",
+            "path":"https://daytra-2nd-task.webkida.site/",
             "img":"./img/works/daytra2nd.png",
             "title":"デイトラ<br>中級編課題"
         },
         {
-            "path":"http://daytra-2nd-lastask.webkida.site/",
+            "path":"https://daytra-2nd-lastask.webkida.site/",
             "img":"./img/works/daytra2ndlast.png",
             "title":"デイトラ<br>中級編最終課題"
         },
