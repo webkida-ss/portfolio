@@ -47,6 +47,7 @@
 	max-width: 100%;
 	height: inherit;// 高さは親を継承
 	margin: 0 auto;
+	padding: 0 10px;
 
 	@include mq(tab-only) {
 		width: $layout-width-inner-tab;
@@ -55,6 +56,7 @@
 		// width: auto;
 		// width: ($layout-width-inner-sp / $layout-width-canvas-sp) * 100% ;
 		width: $layout-width-inner-sp;
+		padding: 0 5px;
 		// margin: 0 *px;// 固定マージン
 	}
 }

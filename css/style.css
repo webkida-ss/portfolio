@@ -124,6 +124,7 @@ a
     max-width: 100%;
     height: inherit;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .util__link
@@ -387,7 +388,6 @@ a
 {
     width: 25%;
     margin-right: auto;
-    padding-left: 5px;
 }
 
 .footer__foreign-link p::after
@@ -420,6 +420,8 @@ a
 
 .footer__copyright
 {
+    margin-top: 20px;
+
     text-align: center;
 }
 
@@ -594,7 +596,7 @@ a
 .service__items--list
 {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 50%;
 
     width: 100%;
@@ -643,12 +645,12 @@ a
     line-height: 2;
 
     margin-top: 30px;
-    padding: 0 5px 0 10px;
+    padding: 0 0 0 10px;
 }
 
 .service__link
 {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .skill__inner
@@ -658,7 +660,6 @@ a
     display: flex;
 
     margin-top: 40px;
-    padding: 0 5px;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -668,6 +669,8 @@ a
 .skill__text
 {
     line-height: 2;
+
+    padding-right: 10px;
 
     letter-spacing: .8px;
 }
@@ -1112,6 +1115,10 @@ a
     {
         margin-left: 25px;
     }
+    .footer__foreign-link
+    {
+        width: 40%;
+    }
     .works__item
     {
         width: calc(((100% - (25px * (3 - 1))) / 3) - 1px);
@@ -1139,6 +1146,7 @@ a
     .inner
     {
         width: 345px;
+        padding: 0 5px;
     }
     .display-only-tab
     {
@@ -1214,8 +1222,6 @@ a
     .footer__copyright
     {
         font-size: 1.4rem;
-
-        margin-top: 20px;
     }
     .top__text
     {
@@ -1358,6 +1364,10 @@ a
     {
         width: 100%;
         margin: 0 auto;
+    }
+    .service__text
+    {
+        padding: 0;
     }
     .service__link
     {

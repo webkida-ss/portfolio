@@ -30,7 +30,7 @@
 
 		&--list {
 			position: absolute;
-			top: 40px;
+			top: 30px;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100%;
@@ -72,15 +72,18 @@
 	}
 	&__text {
 		margin-top: 30px;
-		padding: 0 5px 0 10px;
+		padding: 0 0 0 10px;
 		line-height: 2;
 
+		@include mq(tab) {
+			padding: 0;
+		}
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
 	}
 	&__link {
-		margin-top: 100px;
+		margin-top: 70px;
 
 		@include mq(tab) {
 			margin-top: 30px;

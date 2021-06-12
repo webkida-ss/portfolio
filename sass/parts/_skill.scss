@@ -1,19 +1,20 @@
 .skill {
 	@extend %section-padding;
-	
+
 	&__inner {
 		display: flex;
 		align-items: center;
 		margin-top: 40px;
-		padding: 0 5px;
+
 		@include mq(tab) {
 			display: block;
 		}
 	}
 	&__text {
+		padding-right: 10px;
 		line-height: 2;
 		letter-spacing: .8px;
-		
+
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
@@ -35,7 +36,6 @@
 			$slill-comment-before-size: 15px;
 			$slill-comment-after-place: -30px;
 			$slill-comment-after-size: 30px;
-
 			// タブレット以下では表示しない
 			@include mq(tab) {
 				display: none;
@@ -69,11 +69,12 @@
 	}
 	&__list {
 		display: flex;
-		& + & {
-			margin-top: 30px;
-		}
+
 		@include mq(tab) {
 			justify-content: space-around;
+			margin-top: 30px;
+		}
+		& + & {
 			margin-top: 30px;
 		}
 	}
@@ -82,6 +83,7 @@
 		font-size: 1.4rem;
 		font-family: $font-family-english;
 		text-align: center;
+
 		@include mq(sp) {
 			font-size: 1.2rem;
 		}
@@ -91,6 +93,7 @@
 		}
 		& + & {
 			margin-left: 50px;
+
 			@include mq(tab) {
 				margin-left: 0;
 			}

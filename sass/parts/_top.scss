@@ -16,13 +16,13 @@
 		transform: translate(-50%,-50%);
 		font-size: 2rem;
 		font-family: $font-family-english;
-		
+
 		@extend %under-line-red;
 		@include mq(sp) {
 			width: auto;
 			font-size: 1.6rem;
 			text-align: center;
-			&::after{
+			&::after {
 				display: none;
 			}
 		}
