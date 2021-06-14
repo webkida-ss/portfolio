@@ -6,12 +6,6 @@
 // %btn-base{ 
 // }
 
-// 強調ボタン
-// %btn-accents{
-//     @extend %btn-base;
-// }
-
-
 %under-line-red {
 	&::after {
 		display: block;
