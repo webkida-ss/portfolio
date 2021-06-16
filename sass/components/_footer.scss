@@ -37,9 +37,9 @@
 	}
 
 	&__copyright {
+		display: block;
 		margin-top: 20px;
 		text-align: center;
-
 		@include mq(sp) {
 			font-size: 1.4rem;
 		}

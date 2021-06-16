@@ -377,54 +377,6 @@ a
     opacity: .5;
 }
 
-.footer
-{
-    padding: 40px 0 20px;
-
-    background: #e1f4f8;
-}
-
-.footer__foreign-link
-{
-    width: 25%;
-    margin-right: auto;
-}
-
-.footer__foreign-link p::after
-{
-    display: block;
-
-    width: 100%;
-
-    content: '';
-
-    border-bottom: 1px solid #333;
-}
-
-.footer__foreign-link ul
-{
-    margin-top: 10px;
-}
-
-.footer__foreign-link li
-{
-    font-size: 1rem;
-
-    padding-left: 10px;
-}
-
-.footer__foreign-link li:hover
-{
-    opacity: .6;
-}
-
-.footer__copyright
-{
-    margin-top: 20px;
-
-    text-align: center;
-}
-
 .top
 {
     height: 400px;
@@ -1081,6 +1033,56 @@ a
     text-align: center;
 }
 
+.footer
+{
+    padding: 40px 0 20px;
+
+    background: #e1f4f8;
+}
+
+.footer__foreign-link
+{
+    width: 25%;
+    margin-right: auto;
+}
+
+.footer__foreign-link p::after
+{
+    display: block;
+
+    width: 100%;
+
+    content: '';
+
+    border-bottom: 1px solid #333;
+}
+
+.footer__foreign-link ul
+{
+    margin-top: 10px;
+}
+
+.footer__foreign-link li
+{
+    font-size: 1rem;
+
+    padding-left: 10px;
+}
+
+.footer__foreign-link li:hover
+{
+    opacity: .6;
+}
+
+.footer__copyright
+{
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+
 @media (min-width: 560px) and (max-width: 959px)
 {
     .profile,
@@ -1115,10 +1117,6 @@ a
     {
         margin-left: 25px;
     }
-    .footer__foreign-link
-    {
-        width: 40%;
-    }
     .works__item
     {
         width: calc(((100% - (25px * (3 - 1))) / 3) - 1px);
@@ -1126,6 +1124,10 @@ a
     .works__item:not(:nth-child(3n+1))
     {
         margin-left: 25px;
+    }
+    .footer__foreign-link
+    {
+        width: 40%;
     }
 }
 
@@ -1219,18 +1221,6 @@ a
         -ms-flex-align: center;
         align-items: center;
     }
-    .footer__foreign-link
-    {
-        width: 100%;
-    }
-    .footer__foreign-link p
-    {
-        font-size: 1.4rem;
-    }
-    .footer__copyright
-    {
-        font-size: 1.4rem;
-    }
     .top__text
     {
         font-size: 1.6rem;
@@ -1320,6 +1310,18 @@ a
     .contact__thanks-message
     {
         font-size: 1.2rem;
+    }
+    .footer__foreign-link
+    {
+        width: 100%;
+    }
+    .footer__foreign-link p
+    {
+        font-size: 1.4rem;
+    }
+    .footer__copyright
+    {
+        font-size: 1.4rem;
     }
 }
 
