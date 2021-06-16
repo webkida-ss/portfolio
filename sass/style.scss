@@ -10,7 +10,7 @@
 
 // components
 @import 'components/_header';// ヘッダー
-@import 'components/_footer';// フッター
+
 // parts
 @import 'parts/_towp';
 @import 'parts/_profile';
@@ -18,3 +18,6 @@
 @import 'parts/_skill';
 @import 'parts/_works';
 @import 'parts/_contact';
+
+// components
+@import 'components/_footer';// フッター
