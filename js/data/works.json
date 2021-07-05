@@ -1,6 +1,11 @@
 {
     "worksDataList":[
         {
+            "path":"https://daytra-3rd-lastask.webkida.site/",
+            "img":"./img/works/daytra3rd.png",
+            "title":"デイトラ<br>卒業制作"
+        },
+        {
             "path":"https://daytra-2nd-task.webkida.site/",
             "img":"./img/works/daytra2nd.png",
             "title":"デイトラ<br>中級編課題"
