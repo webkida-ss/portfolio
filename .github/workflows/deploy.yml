@@ -16,4 +16,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }} 
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} 
           LOCAL_DIR: ./                           
-          REMOTE_DIR: /webkida.site/public_html
+          REMOTE_DIR: /webkida-ss.com/public_html
