@@ -1,34 +1,39 @@
 {
     "worksDataList":[
         {
+            "path":"https://machicoffee.webkida-ss.com/",
+            "img":"./img/works/machicoffee.png",
+            "title":"架空のカフェサイト<br>WordPress：Snow Monkey"
+        },
+        {
             "path":"https://daytra-3rd-lastask.webkida-ss.com/",
             "img":"./img/works/daytra3rd.png",
-            "title":"デイトラ<br>卒業制作"
+            "title":"デイトラ制作課題<br>WordPress：オリジナルテーマ"
         },
         {
             "path":"https://daytra-2nd-task.webkida-ss.com/",
             "img":"./img/works/daytra2nd.png",
-            "title":"デイトラ<br>中級編課題"
+            "title":"デイトラ制作課題"
         },
         {
             "path":"https://daytra-2nd-lastask.webkida-ss.com/",
             "img":"./img/works/daytra2ndlast.png",
-            "title":"デイトラ<br>中級編最終課題"
-        },
-        {
-            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
-            "img":"./img/works/iamdog.png",
-            "title":"ちづみさん<br>練習用デモサイト1"
-        },
-        {
-            "path":"https://webkida-ss.github.io/reproduction/01_goodpasta/",
-            "img":"./img/works/goodpasta.png",
-            "title":"ちづみさん<br>練習用デモサイト2"
+            "title":"デイトラ制作課題"
         },
         {
             "path":"https://cresta-advanced.webkida-ss.com/",
             "img":"./img/works/cresta-advanced.png",
-            "title":"クリ★スタさん<br>上級編"
+            "title":"クリ★スタさん上級編"
+        },
+        {
+            "path":"https://webkida-ss.github.io/reproduction/02_IamDog/",
+            "img":"./img/works/iamdog.png",
+            "title":"ちづみさんデモサイト"
+        },
+        {
+            "path":"https://webkida-ss.github.io/reproduction/01_goodpasta/",
+            "img":"./img/works/goodpasta.png",
+            "title":"ちづみさんデモサイト"
         }
     ]
 }
