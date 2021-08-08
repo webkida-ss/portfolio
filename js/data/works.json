@@ -1,17 +1,17 @@
 {
     "worksDataList":[
         {
-            "path":"https://daytra-3rd-lastask.webkida.site/",
+            "path":"https://daytra-3rd-lastask.webkida-ss.com/",
             "img":"./img/works/daytra3rd.png",
             "title":"デイトラ<br>卒業制作"
         },
         {
-            "path":"https://daytra-2nd-task.webkida.site/",
+            "path":"https://daytra-2nd-task.webkida-ss.com/",
             "img":"./img/works/daytra2nd.png",
             "title":"デイトラ<br>中級編課題"
         },
         {
-            "path":"https://daytra-2nd-lastask.webkida.site/",
+            "path":"https://daytra-2nd-lastask.webkida-ss.com/",
             "img":"./img/works/daytra2ndlast.png",
             "title":"デイトラ<br>中級編最終課題"
         },
@@ -26,7 +26,7 @@
             "title":"ちづみさん<br>練習用デモサイト2"
         },
         {
-            "path":"https://cresta-advanced.webkida.site/",
+            "path":"https://cresta-advanced.webkida-ss.com/",
             "img":"./img/works/cresta-advanced.png",
             "title":"クリ★スタさん<br>上級編"
         }
