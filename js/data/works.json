@@ -1,9 +1,14 @@
 {
     "worksDataList":[
         {
+            "path":"https://machinochiropractic.webkida-ss.com/",
+            "img":"./img/works/machinochiropractic.png",
+            "title":"架空の接骨院<br>WordPress：オリジナルテーマ"
+        },
+        {
             "path":"https://machicoffee.webkida-ss.com/",
             "img":"./img/works/machicoffee.png",
-            "title":"架空のカフェサイト<br>WordPress：Snow Monkey"
+            "title":"架空のカフェ<br>WordPress：Snow Monkey"
         },
         {
             "path":"https://daytra-3rd-lastask.webkida-ss.com/",
