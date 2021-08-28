@@ -121,6 +121,31 @@ $(function () {
 		}
 	});
 
+	/*********************************************
+	 * ユーザID/パスワード クリップボードコピー
+	 *********************************************/
+	function execCopy() {
+		let text = $('#js-userid').text();
+		console.log(text);
+		// コピーする媒体となるテキストエリアを生成
+		var clipboard = $('<textarea></textarea>');
+		clipboard.text(text);
+		// body直下に一時的に挿入
+		$('body').append(clipboard);
+		// 選択状態にする
+		clipboard.select();
+		// WebExtension APIのブラウザ拡張の仕組みを呼び出しクリップボードにコピー
+		document.execCommand('copy');
+		// 不要なテキストエリアを削除
+		clipboard.remove();
+
+		alert('クリップボードにコピーしました');
+	}
+
+	$('#js-userid').click(execCopy);
+	// $('#js-password').click(execCopy(this));
+
+
 
 	/*********************************************
 	 * フォームバリデーション

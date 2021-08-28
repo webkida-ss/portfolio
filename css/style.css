@@ -841,6 +841,20 @@ textarea
     text-align: center;
 }
 
+.works__userid,
+.works__password
+{
+    cursor: pointer;
+    -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+}
+
+.works__userid:hover,
+.works__password:hover
+{
+    opacity: .5;
+}
+
 .contact__inner
 {
     width: 54.6875%;

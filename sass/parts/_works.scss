@@ -111,4 +111,11 @@
 		font-size: 1rem;
 		text-align: center;
 	}
+	&__userid, &__password{
+		transition: all .5s ease 0s;
+		cursor: pointer;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
 }
