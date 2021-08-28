@@ -123,12 +123,12 @@ $(function () {
 
 	/*********************************************
 	 * ユーザID/パスワード クリップボードコピー
+	 * clickイベントに引数を指定！eventオブジェクトから取得！
 	 *********************************************/
-	function execCopy() {
-		let text = $('#js-userid').text();
-		console.log(text);
+	function execCopy(e) {
+		let text = e.data;
 		// コピーする媒体となるテキストエリアを生成
-		var clipboard = $('<textarea></textarea>');
+		let clipboard = $('<textarea></textarea>');
 		clipboard.text(text);
 		// body直下に一時的に挿入
 		$('body').append(clipboard);
@@ -138,14 +138,12 @@ $(function () {
 		document.execCommand('copy');
 		// 不要なテキストエリアを削除
 		clipboard.remove();
-
 		alert('クリップボードにコピーしました');
 	}
-
-	$('#js-userid').click(execCopy);
-	// $('#js-password').click(execCopy(this));
-
-
+	let userid = $('#js-userid');
+	userid.click(userid.text(), execCopy);
+	let password = $('#js-password');
+	password.click(password.text(), execCopy);
 
 	/*********************************************
 	 * フォームバリデーション
