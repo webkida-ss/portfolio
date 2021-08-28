@@ -138,7 +138,7 @@ $(function () {
 		document.execCommand('copy');
 		// 不要なテキストエリアを削除
 		clipboard.remove();
-		alert('クリップボードにコピーしました');
+		alert('コピーしました：' + text);
 	}
 	let userid = $('#js-userid');
 	userid.click(userid.text(), execCopy);
