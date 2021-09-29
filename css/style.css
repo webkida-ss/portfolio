@@ -1061,6 +1061,8 @@ textarea
 
 .footer__foreign-link
 {
+    display: none;
+
     width: 25%;
     margin-right: auto;
 }
